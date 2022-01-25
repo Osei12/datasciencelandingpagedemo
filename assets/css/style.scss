@@ -156,9 +156,9 @@ section.main{
 .slider .owl-item.active.center .slider-card{
     transform: scale(1.15);
     opacity: 1;
-    background: #DA4453;  
-    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  
-    background: linear-gradient(to right, #89216B, #DA4453); 
+    background: #141114;  
+    background: -webkit-linear-gradient(to right, #141114, #141313);  
+    background: linear-gradient(to right, #141114, #141313);
     color: #fff;
     border-radius: 5px;
 }
@@ -468,6 +468,20 @@ footer .copyright{
             a{
                 padding:.5em 1.5em ;
                 font-size: .9em;
+                &:hover{
+                    background: none;
+                }
+            }
+            .btn{
+                padding: .2em 2em;
+                background-color: $btnColor;
+                color: $textColor;
+                border-radius: .4em;
+                &:hover{
+                    background: rgb(53, 53, 192);
+                    color: #fff;
+                    font-size: bold;
+                }
             }
         }
     }

@@ -176,9 +176,9 @@ section.main .main-content p {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   opacity: 1;
-  background: #DA4453;
-  background: -webkit-gradient(linear, left top, right top, from(#89216B), to(#DA4453));
-  background: linear-gradient(to right, #89216B, #DA4453);
+  background: #141114;
+  background: -webkit-gradient(linear, left top, right top, from(#141114), to(#141313));
+  background: linear-gradient(to right, #141114, #141313);
   color: #fff;
   border-radius: 5px;
 }
@@ -536,6 +536,20 @@ footer .copyright {
   nav ul a {
     padding: .5em 1.5em;
     font-size: .9em;
+  }
+  nav ul a:hover {
+    background: none;
+  }
+  nav ul .btn {
+    padding: .2em 2em;
+    background-color: #445FEC;
+    color: #ccc5c5;
+    border-radius: .4em;
+  }
+  nav ul .btn:hover {
+    background: #3535c0;
+    color: #fff;
+    font-size: bold;
   }
   .hero-img {
     left: unset;
