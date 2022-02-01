@@ -18,7 +18,7 @@ body{
 }
 
 .wrapper{
-    margin: 1.2em;
+    margin: 1.1em;
 }
 a{
     text-decoration: none;
@@ -42,6 +42,10 @@ a{
 .logo{
     color: #fff;
     font-weight: 500;
+    img{
+        width: 90px;
+        margin-top: -1em;
+    }
 }
 
 nav{
@@ -51,7 +55,7 @@ nav{
     top: 0;
     background: #0a0a0b;
     height: 100vh;
-    width: 50%;
+    width: 75%;
     z-index: 999;
     text-transform: uppercase;
     transform: translateX(100%);
@@ -66,6 +70,18 @@ nav{
             display: block;
             &:hover{
                 background: $textColor;
+            }
+        }
+        li{
+            &:nth-child(4){
+                background-color: $btnColor;
+                border-radius: .85em;
+                &:hover a{
+                    color: #fff;
+                    border: 2px solid #fff;
+                    border-radius: .85em;
+                    background: #101;
+                }
             }
         }
 
@@ -85,7 +101,8 @@ header{
     width: 100%;
     background: rgb(12, 12, 12);
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 1em .42em;
+    height: 4.7em;
     box-shadow: 0px 20px 20px 5px rgba(20, 19, 19, 0.3);
     z-index: 999;
     svg{
@@ -101,9 +118,13 @@ section.hero{
     color:#fff;
     height: 90vh;
     margin-top: 6em;
+    padding-top: 8em;
     h1{
         text-transform: uppercase;
         font-weight: bold;
+    }
+    .logo-name{
+        color: rgb(167, 29, 29);
     }
     span{
         color: rgb(167, 29, 29);
@@ -122,6 +143,7 @@ section.hero{
 }
 
 section.main{
+    padding-top: 5.5em;
     .main-content{
         .btn{
             color: #fff;
@@ -222,6 +244,7 @@ section.main{
     margin: 0 !important;
     padding: 0 !important;
     .team-container{
+        padding-top: 2em;
         display: flex;
         // flex-direction: column;
         place-content: center;
@@ -293,7 +316,7 @@ footer .col:nth-child(2), .col:nth-child(3){
     flex-basis: 15%;
 }
 footer .logo{
-    width: 90px;
+    width: 100px;
     
 }
 
@@ -455,11 +478,13 @@ footer .copyright{
 }
 
 @media only screen and (min-width:848px){
+    header{
+        padding: 1em 3em;
+    }
     .menu{
         display: none;
     }
     nav{
-        position: fixed;
         transform: translateX(0);
         position: unset;
         display: block;
@@ -479,6 +504,9 @@ footer .copyright{
                 font-size: .9em;
                 &:hover{
                     background: none;
+                    border-bottom: 2px solid #fff;
+                    width: fit-content;
+                    transition: .5s;
                 }
             }
             .btn{

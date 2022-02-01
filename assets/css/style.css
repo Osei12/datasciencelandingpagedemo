@@ -17,7 +17,7 @@ body {
 }
 
 .wrapper {
-  margin: 1.2em;
+  margin: 1.1em;
 }
 
 a {
@@ -44,6 +44,11 @@ a {
   font-weight: 500;
 }
 
+.logo img {
+  width: 90px;
+  margin-top: -1em;
+}
+
 nav {
   z-index: 10000;
   position: fixed;
@@ -51,7 +56,7 @@ nav {
   top: 0;
   background: #0a0a0b;
   height: 100vh;
-  width: 50%;
+  width: 75%;
   z-index: 999;
   text-transform: uppercase;
   -webkit-transform: translateX(100%);
@@ -78,6 +83,18 @@ nav ul a:hover {
   background: #ccc5c5;
 }
 
+nav ul li:nth-child(4) {
+  background-color: #445FEC;
+  border-radius: .85em;
+}
+
+nav ul li:nth-child(4):hover a {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: .85em;
+  background: #101;
+}
+
 nav .close {
   float: right;
   margin: 2em;
@@ -96,7 +113,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em 2em;
+  padding: 1em .42em;
+  height: 4.7em;
   -webkit-box-shadow: 0px 20px 20px 5px rgba(20, 19, 19, 0.3);
           box-shadow: 0px 20px 20px 5px rgba(20, 19, 19, 0.3);
   z-index: 999;
@@ -117,11 +135,16 @@ section.hero {
   color: #fff;
   height: 90vh;
   margin-top: 6em;
+  padding-top: 8em;
 }
 
 section.hero h1 {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+section.hero .logo-name {
+  color: #a71d1d;
 }
 
 section.hero span {
@@ -139,6 +162,10 @@ section.hero .btn:hover {
   background: #101;
   color: #fff;
   border: 2px solid #445FEC;
+}
+
+section.main {
+  padding-top: 5.5em;
 }
 
 section.main .main-content .btn {
@@ -247,6 +274,7 @@ section.main .main-content p {
 }
 
 .team-section .team-container {
+  padding-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +367,7 @@ footer .col:nth-child(2), .col:nth-child(3) {
 }
 
 footer .logo {
-  width: 90px;
+  width: 100px;
 }
 
 footer .col h3 {
@@ -520,11 +548,13 @@ footer .copyright {
 }
 
 @media only screen and (min-width: 848px) {
+  header {
+    padding: 1em 3em;
+  }
   .menu {
     display: none;
   }
   nav {
-    position: fixed;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     position: unset;
@@ -548,6 +578,12 @@ footer .copyright {
   }
   nav ul a:hover {
     background: none;
+    border-bottom: 2px solid #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   nav ul .btn {
     padding: .2em 2em;
