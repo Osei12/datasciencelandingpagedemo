@@ -56,6 +56,7 @@ nav{
     background: #0a0a0b;
     height: 100vh;
     width: 75%;
+    font-size:.75em;
     z-index: 999;
     text-transform: uppercase;
     transform: translateX(100%);
@@ -262,9 +263,9 @@ section.main{
             margin: 0 auto 2em auto;
             border-radius: 1em;
             img{
-                width: 5em;
-                height:5em;
-                border: 5px solid #2a2a2c;
+                width: 6em;
+                height:6em;
+                border: 2px solid #2a2a2c;
                 border-radius: 50%;
                 margin-top: -4.5em;
                 background-size: cover;
@@ -491,6 +492,7 @@ footer .copyright{
         width: auto;
         height: auto;
         background: none;
+        font-size: 1em;
 
         svg.close{
             display: none;
